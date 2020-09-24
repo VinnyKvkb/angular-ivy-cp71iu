@@ -1,0 +1,145 @@
+<div class="softphone-menu" [class.active]="isOpen">
+  <!--   <div class="soft-phone">
+
+        // Number Input 
+        <div class="row">
+            <input type='text' class='input-control' readonly value="9632587410">
+        </div>
+
+        // Dial Pad 
+        <div class="firstCall" [class.visible]="dialPad">
+            <ul>
+                <li class="ripple">1</li>
+                <li class="ripple">2</li>
+                <li class="ripple">3</li>
+                <li class="ripple">4</li>
+                <li class="ripple">5</li>
+                <li class="ripple">6</li>
+                <li class="ripple">7</li>
+                <li class="ripple">8</li>
+                <li class="ripple">9</li>
+                <li class="ripple">*</li>
+                <li class="ripple">0</li>
+                <li class="ripple">#</li>
+                // </ul>
+        
+                    <ul> 
+                // Refresh Button 
+                <li class="ripple"><i class="material-icons">
+                        autorenew
+                    </i>
+                </li>
+
+                // Call Button 
+                <li class="ripple" style="background:#8bc34a" (click)="callAnswer()">
+                    <i class=" material-icons">call
+                    </i>
+                </li>
+                // Clear All Button 
+                <li class="ripple"><i class="material-icons">
+                        backspace
+                    </i>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div [class.visible]='visible'>
+                <ul>
+
+                    // Add Call Button 
+                    <li class="ripple" (click)="addCall()"><i class="material-icons">
+                            add
+                        </i>
+                        <div class="smallText">Add Call</div>
+                    </li>
+
+                    // Hold Button 
+                    <li class="ripple" [class.text-blue]='unhold' (click)="unholdBtn()"><i class="material-icons">
+                            pause
+                        </i>
+                        <div class="smallText">Hold</div>
+                    </li>
+
+                    // Conference Call button 
+                    <li class="ripple"><i class="material-icons">
+                            call_merge
+                        </i>
+                        <div class="smallText">Conference</div>
+                    </li>
+
+                    // </ul>
+                        <ul> 
+                    <li style="visibility:hidden"></li>
+
+                    // End call Button 
+                    <li class="ripple" style="background:red" (click)="endCall()"><i class="material-icons">
+                            call_end
+                        </i>
+                        <div class="smallText">End call</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        // Conference List 
+        <div>
+            <div class="conference-list">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td matTooltip="EMT_1">9632587410</td>
+                            <td><i class="material-icons cursor text-danger" pTooltip="End Call"
+                                    tooltipPosition="bottom">call_end</i></td>
+                            <td><i class="material-icons cursor" matTooltip="Hold">pause</i></td>
+                        </tr>
+                        <tr>
+                            <td matTooltip="EMT_2">8965230147</td>
+                            <td><i class="material-icons cursor text-danger" pTooltip="End Call"
+                                    tooltipPosition="bottom">call_end</i></td>
+                            <td><i class="material-icons cursor" matTooltip="Hold">pause</i></td>
+                        </tr>
+                        <tr>
+                            <td matTooltip="EMT_3">7896541230</td>
+                            <td><i class="material-icons cursor text-danger" pTooltip="End Call"
+                                    tooltipPosition="bottom">call_end</i></td>
+                            <td><i class="material-icons cursor" matTooltip="Hold">pause</i></td>
+                        </tr>
+                        <tr>
+                            <td matTooltip="EMT_4">987563210</td>
+                            <td><i class="material-icons cursor text-danger" pTooltip="End Call"
+                                    tooltipPosition="bottom">call_end</i></td>
+                            <td><i class="material-icons cursor" matTooltip="Hold">pause</i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>-->
+  <!-- Notifications  -->
+  <!-- <div class="content clearfix"> -->
+  <!-- <div class="ui-g ui-fluid"> -->
+  <div class="ui-g-12 ui-md-12">
+    <div class="notificatons">
+      <h4 class="title">Notifications</h4>
+      <marquee
+        width="100%"
+        direction="up"
+        height="90%"
+        onmouseover="this.stop();"
+        onmouseout="this.start();"
+      >
+        <ul>
+          <li>
+            <span
+              >COVID-19 UPDATE: RS India is committed to safely helping keep you
+              up and running. <span class="new">New</span></span
+            >
+          </li>
+        </ul>
+      </marquee>
+    </div>
+  </div>
+</div>
+<!-- </div>
+</div> -->

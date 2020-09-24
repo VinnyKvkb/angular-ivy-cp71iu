@@ -1,0 +1,116 @@
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-9 p-t-n p-b-n">
+        <h5 class="h5-title">
+            Patient Information
+            <i class="material-icons cursor pull-right p-r-md" pTooltip="Refresh" tooltipPosition="bottom">
+                autorenew
+            </i>
+            <i class="material-icons pull-right cursor p-r-md" pTooltip="Delete All Patients" tooltipPosition="bottom">
+                delete_forever
+            </i>
+            <i class="material-icons pull-right cursor p-r-md" pTooltip="Add Patient" tooltipPosition="bottom"
+                (click)="addPatient()">
+                person_add
+            </i>
+
+        </h5>
+        <p-table [responsive]="true" [resizableColumns]="true" #dt [columns]="cols" [value]="patientsInfoList"
+            (sortFunction)="customSort($event)" [customSort]="true" [paginator]="true" [rows]="5" editMode="row">
+            <ng-template pTemplate="caption">
+                <div style="text-align: right">
+                    <i class="material-icons search-icon">search</i>
+                    <input type="text" pInputText size="50" placeholder="Search Here"
+                        (input)="dt.filterGlobal($event.target.value, 'contains')">
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header" let-columns>
+                <tr>
+                    <!-- <th class="text-center" pResizableColumn style=" width: 3%">
+                        <p-checkbox name="group1" [(ngModel)]="check1" inputId="ny"></p-checkbox>
+                    </th> -->
+                    <th *ngFor="let col of columns" [pSortableColumn]="col.field" pResizableColumn>
+                        {{col.header}}
+                        <p-sortIcon [field]="col.field"></p-sortIcon>
+                    </th>
+                    <th pResizableColumn style=" width: 5%">Assesment</th>
+                    <th pResizableColumn style=" width: 5%">Actions</th>
+                </tr>
+
+            </ng-template>
+            <ng-template pTemplate="body" let-rowData let-editing="editing" let-ri="rowIndex">
+                <tr [pEditableRow]="rowData">
+                    <!-- <td class="text-center">
+                        <p-checkbox name="group2" value="1" [(ngModel)]="selectedPatient" inputId="patient">
+                        </p-checkbox>
+                    </td> -->
+                    <td>
+                        {{rowData.patientId}}
+                    </td>
+                    <td>
+                        {{rowData.patientName}}
+                    </td>
+                    <td>
+                        {{rowData.age}}
+                    </td>
+                    <td>
+                        {{rowData.gender}}
+                    </td>
+                    <!-- <td>
+                        {{rowData.ambulanceNumber}}
+                        <i class="material-icons text-danger cursor pull-right" pTooltip="De-Assign"
+                            tooltipPosition="bottom">
+                            close
+                        </i>
+                    </td>
+                    <td>
+                        {{rowData.firstResponder}}&nbsp;&nbsp;
+                        <i class="material-icons text-danger cursor pull-right" pTooltip="De-Assign"
+                            tooltipPosition="bottom">
+                            close
+                        </i>
+                    </td> -->
+                    <td>
+                        {{rowData.medicalChiefComplaint}}
+                    </td>
+                    <td>
+                        {{rowData.policeChiefComplaint}}
+                    </td>
+                    <td>
+                        {{rowData.fireChiefComplaint}}
+                    </td>
+                    <td class="text-center">
+                        <a class="cursor" (click)="assesmentDetails()">Start</a>
+                    </td>
+
+                    <td class="text-center">
+                        <a href="">
+                            <i class="material-icons text-danger" pTooltip="Delete Patient" tooltipPosition="bottom">
+                                delete_forever
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+    <div class="ui-g-12 ui-md-3 p-t-n p-b-n">
+        <h5 class="h5-title">Address</h5>
+        <form style="margin-top: 23px;">
+            <!-- Manual Address Capture -->
+            <div class="ui-g-12 ui-md-12 p-none">
+                <span class="ui-float-label">
+                    <input id="address1" type="text" pInputText name="address1" [(ngModel)]="address1"
+                        style="border:1px solid #a6a6a6;border-radius: 4px" readonly>
+                    <label for="address1">Address1*</label>
+                </span>
+            </div>
+            <div class="ui-g-12 ui-md-12 p-none" style="margin-top: 23px;">
+                <span class="ui-float-label">
+                    <textarea id="address2" [rows]="5" [cols]="30" style="border:1px solid #a6a6a6;border-radius: 4px;"
+                        pInputTextarea></textarea>
+                    <label for="address2">Address2*</label>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+<!-- User Image -->
+<div class="login">
+    <div class="user-logo">
+        <img src="assets/img/a4.jpg" alt="user">
+    </div>
+    <form autocomplete="off">
+        <!-- UserName -->
+        <div class="ui-g ui-fluid">
+            <div class="ui-g-12 ui-md-12 p-l-n p-r-n">
+                <span class="ui-float-label">
+                    <input id="float-input" type="text" size="30" pInputText>
+                    <label for="float-input">Username</label>
+                </span>
+            </div>
+            <!-- Password -->
+            <div class="ui-g-12 ui-md-12 p-l-n p-r-n">
+                <span class="ui-float-label">
+                    <input id="float-input" type="password" size="30" pInputText>
+                    <label for="float-input">Password</label>
+                </span>
+            </div>
+
+            <!-- Shift -->
+            <div class="ui-g-12 ui-md-12 p-l-n p-r-n">
+                <span class="ui-float-label">
+                    <p-dropdown [autoDisplayFirst]="false" [options]="shifts" name="selectedShift"
+                        [(ngModel)]="selectedShift" optionLabel="shiftType" [showClear]="true"></p-dropdown>
+                    <label for="float-input">Shift</label>
+                </span>
+            </div>
+
+            <!-- Buttons -->
+        </div>
+        <div class="ui-g ui-fluid">
+            <button pButton type="button" label="Submit" class="ui-button-raised ui-button-info"></button>
+        </div>
+    </form>
+</div>

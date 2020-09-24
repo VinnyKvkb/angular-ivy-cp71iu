@@ -1,0 +1,241 @@
+<nav class="navbar nav-dark-gray">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- <a class="navbar-brand">WebSiteName</a> -->
+    </div>
+    <ul class="nav navbar-nav">
+      <!-- Menu -->
+      <li>
+        <a>
+          <i class="material-icons" (click)="openSidenav()">menu</i>
+        </a>
+      </li>
+
+      <!-- Logo -->
+      <li class="p-logo">
+        <a class="p-none">
+          <img src="assets/img/logo.png" alt="Pro-Logo" />
+        </a>
+      </li>
+
+      <!-- User Break Status -->
+      <li>
+        <a>
+          <i class="zoom break"></i>
+          <i class="material-icons circle break"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <!-- Full Screen -->
+      <li>
+        <a>
+          <i class="material-icons">fullscreen</i>
+        </a>
+      </li>
+
+      <!-- Search -->
+      <li>
+        <a>
+          <i class="material-icons" (click)="searchOpen()">search</i>
+        </a>
+      </li>
+
+      <!-- Messages -->
+      <li>
+        <a [matMenuTriggerFor]="remainders">
+          <i class="material-icons">alarm</i>
+          <span class="animate-border"></span>
+          <div class="mark"></div>
+        </a>
+        <mat-menu #remainders="matMenu">
+          <div class="mailbox">
+            <ul>
+              <li>
+                <div class="drop-title">You have 2 Remainders</div>
+              </li>
+              <li>
+                <div class="notificationsmenu" id="style-3">
+                  <div class="scroll">
+                    <div class="ps">
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </mat-menu>
+      </li>
+
+      <!-- Notifications -->
+      <li>
+        <a>
+          <!-- <i
+            class="material-icons"
+            [matMenuTriggerFor]="notif"
+            (click)="softPhoneOPen()"
+            >notifications_active</i
+          > -->
+
+          <!-- <i class="fab fa-youtube"></i> -->
+          <!-- <span class="animate-border"></span>
+          <div class="mark"></div> -->
+        </a>
+        <mat-menu #notif="matMenu">
+          <!--   <div class="mailbox">
+            <ul>
+              <li>
+                <div class="drop-title">You have 15 Notifications</div>
+              </li>
+              <li>
+                <div class="notificationsmenu" id="style-3">
+                  <div class="scroll">
+                    <div class="ps">
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="round">
+                          <i class="material-icons">mail</i>
+                        </div>
+                        <div class="notif-content">
+                          <h5>Launch Admin</h5>
+                          <span class="notif-desc"
+                            >Just see the my new admin!</span
+                          >
+                          <span class="time">9:30 AM</span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+        </mat-menu>
+      </li>
+
+      <!-- User -->
+      <li>
+        <!-- <a>
+          <i class="material-icons" [matMenuTriggerFor]="user">person</i>
+        </a> -->
+        <a>
+          <i class="material-icons" [matMenuTriggerFor]="user">facebook</i>
+        </a>
+        <mat-menu #user="matMenu">
+          <button mat-menu-item (click)="userProfile()">
+            <mat-icon>account_circle</mat-icon>
+            <span>Profile</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>fingerprint</mat-icon>
+            <span>Break</span>
+          </button>
+          <mat-divider></mat-divider>
+          <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Logout</span>
+          </button>
+        </mat-menu>
+      </li>
+
+      <!-- Soft Phone -->
+      <li>
+        <a>
+          <i class="material-icons" (click)="softPhoneOPen()"
+            >notifications_active</i
+          >
+          <!-- <i class="material-icons" (click)="softPhoneOPen()">phone_iphone</i> -->
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Search form -->
+<form class="searchForm" [class.active]="searchToggle">
+  <input type="text" class="searchBar" placeholder="Search Here!" />
+  <i class="material-icons closeBtn" (click)="searchCloseBtn()">close</i>
+</form>

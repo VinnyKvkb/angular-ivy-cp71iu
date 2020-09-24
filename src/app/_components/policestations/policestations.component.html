@@ -1,0 +1,56 @@
+<p-table [responsive]="true" [resizableColumns]="true" #dt [columns]="cols" [value]="policeStationDetails"
+    (sortFunction)="customSort($event)" [customSort]="true" [paginator]="true" [rows]="5" editMode="row">
+    <!-- Search -->
+    <ng-template pTemplate="caption">
+        <div style="text-align: right">
+            <i class="material-icons search-icon">search</i>
+            <input type="text" pInputText size="50" placeholder="Search Here"
+                (input)="dt.filterGlobal($event.target.value, 'contains')">
+        </div>
+    </ng-template>
+    <!-- Table Header -->
+    <ng-template pTemplate="header" let-columns>
+        <tr>
+
+            <th *ngFor="let col of columns" [pSortableColumn]="col.field" pResizableColumn>
+                {{col.header}}
+                <p-sortIcon [field]="col.field"></p-sortIcon>
+            </th>
+        </tr>
+
+    </ng-template>
+    <!-- Table data -->
+    <ng-template pTemplate="body" let-rowData let-editing="editing" let-ri="rowIndex">
+        <tr [pEditableRow]="rowData">
+
+            <td>
+                {{rowData.policeStation}}
+            </td>
+            <td>
+                {{rowData.phone1}}
+                <img src="assets/img/call.png" alt="call" class="cursor callImg">
+            </td>
+            <td>
+                {{rowData.phone2}}
+                <img src="assets/img/call.png" alt="call" class="cursor callImg">
+            </td>
+            <td>
+                {{rowData.address}}
+            </td>
+            <td>
+                {{rowData.village}}
+
+            </td>
+            <td>
+                {{rowData.mandal}}
+
+            </td>
+            <td>
+                {{rowData.district}}
+            </td>
+            <td>
+                {{rowData.state}}
+            </td>
+        </tr>
+    </ng-template>
+</p-table>

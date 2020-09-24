@@ -1,0 +1,31 @@
+.m-t-xs {
+    margin-top: 0.25em;
+}
+
+i.search-icon {
+    position: absolute;
+    top: 15%;
+    right: 96%;
+    z-index: 999;
+}
+
+i.filter-icon {
+    position: absolute;
+    right: 1%;
+    top: 21%;
+    cursor: pointer;
+}
+
+.p-l-r-md {
+    padding-left: 33px;
+    padding-right: 55px;
+}
+
+i.clear-icon {
+    position: absolute;
+    right: 4%;
+    top: 24%;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+}

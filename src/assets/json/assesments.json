@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "price": "VW",
+      "name": 2012,
+      "image": "2.png",
+      "inventoryStatus": "dsad231ff"
+    },
+    {
+      "price": "Audi",
+      "name": 2011,
+      "image": "3.png",
+      "inventoryStatus": "gwregre345"
+    },
+    {
+      "price": "Renault",
+      "name": 2005,
+      "image": "4.png",
+      "inventoryStatus": "h354htr"
+    },
+    {
+      "price": "BMW",
+      "name": 2003,
+      "image": "5.png",
+      "inventoryStatus": "j6w54qgh"
+    },
+    {
+      "price": "Mercedes",
+      "name": 1995,
+      "image": "7.png",
+      "inventoryStatus": "hrtwy34"
+    }
+  ]
+}

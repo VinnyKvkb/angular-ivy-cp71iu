@@ -1,0 +1,94 @@
+<div class="modal-title">
+    <h4>Patient Details<span class="pull-right cursor">
+            <button mat-dialog-close class="close-button">
+                <mat-icon>close</mat-icon>
+            </button>
+        </span>
+    </h4>
+</div>
+<form autocomplete="off" style="margin-top:22px;">
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-6">
+            <span class="ui-float-label">
+                <input id="patientName" type="text" size="30" pInputText name="patientName" [(ngModel)]="patientName">
+                <label for="patientName">Patient Name*</label>
+            </span>
+        </div>
+        <div class="ui-g-12 ui-md-6">
+            <!-- Age in Years -->
+            <span class="ui-float-label p-t-n p-b-n">
+                <p-inputMask id="age" [(ngModel)]="val" mask="99 Y 99 M 99 D" placeholder="Enter Age"></p-inputMask>
+                <label for="age">Age*</label>
+            </span>
+
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-6">
+            <span class="ui-float-label">
+                <p-dropdown id="gender" [autoDisplayFirst]="false" [options]="genders" name="gender"
+                    [(ngModel)]="selectedGender" optionLabel="genderType" [showClear]="true" filter="true"></p-dropdown>
+                <label for="gender">Gender*</label>
+            </span>
+        </div>
+        <div class="ui-g-12 ui-md-6">
+            <span class="ui-float-label">
+                <p-calendar [monthNavigator]="true" [yearNavigator]="true" yearRange="1900:2100" id="dob" name="dob"
+                    [(ngModel)]="dob" [showIcon]="true"></p-calendar>
+                <label for="dob">Date Of Birth*</label>
+            </span>
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-6">
+            <span class="ui-float-label">
+                <p-dropdown id="medical" [autoDisplayFirst]="false" [options]="medicalOptions" name="medical"
+                    [(ngModel)]="selectedMedicalOption" optionLabel="medicalType" [showClear]="true" filter="true">
+                </p-dropdown>
+
+                <label for="medical">Medical*</label>
+            </span>
+        </div>
+        <div class="ui-g-12 ui-md-6  text-left">
+            <p>Suggested Ambulance : <span class="text-green">ALS</span></p>
+        </div>
+    </div>
+
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-6">
+            <span class="ui-float-label">
+                <p-dropdown id="police" [autoDisplayFirst]="false" [options]="policeOptions" name="police"
+                    [(ngModel)]="selectedPoliceOption" optionLabel="policeType" [showClear]="true" filter="true">
+                </p-dropdown>
+                <label for="police">Police*</label>
+            </span>
+        </div>
+        <div class="ui-g-12 ui-md-6">
+            <span class="ui-float-label">
+                <p-dropdown id="fire" [autoDisplayFirst]="false" [options]="fireOptions" name="fire"
+                    [(ngModel)]="selectedFireOption" optionLabel="fireType" [showClear]="true" filter="true">
+                </p-dropdown>
+
+                <label for="fire">Fire*</label>
+            </span>
+        </div>
+    </div>
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-6 text-left">
+            <p-checkbox name="group1" value="Default Patients" label="Default Patients"
+                [(ngModel)]="selectedDefaultPatients" inputId="ny">
+            </p-checkbox>
+        </div>
+        <div class="ui-g-12 ui-md-6">
+            <span class="ui-float-label">
+                <input id="patients" type="text" pInputText pKeyFilter="num" maxlength="3">
+                <label for="patients">Number Of Patients*</label>
+            </span>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-12 text-center">
+        <button pButton type="button" label="Add Patient" class="ui-button-raised ui-button-info"
+            (click)="submitPatientDetails()"></button>
+        <button pButton type="button" label="Cancel" class="ui-button-raised ui-button-danger"></button>
+    </div>
+</form>

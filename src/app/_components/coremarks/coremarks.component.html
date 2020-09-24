@@ -1,0 +1,43 @@
+<div class="modal-title">
+    <h4>CO Remarks<span class="pull-right cursor">
+            <button mat-dialog-close class="close-button">
+                <mat-icon>close</mat-icon>
+            </button>
+        </span>
+    </h4>
+</div>
+
+<form autocomplete="off" style="margin-top:23px">
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12 ui-md-12">
+            <span class="ui-float-label">
+                <p-dropdown id="coRemarks" [autoDisplayFirst]="false" [options]="coRemarksOptions" name="coRemarks"
+                    [(ngModel)]="selectedCoRemarks" optionLabel="coRemarksType" [showClear]="true" filter="true">
+                </p-dropdown>
+                <label for="coRemarks">CO Remarks*</label>
+            </span>
+        </div>
+        <div class="ui-g-12 ui-md-12">
+            <span class="ui-float-label">
+                <textarea id="otherRemarks" pInputTextarea autoResize="autoResize"></textarea>
+                <label for="otherRemarks">Other Remarks*</label>
+            </span>
+        </div>
+        <div class="ui-g-12 ui-md-12 text-left">
+            <p-checkbox value="" label="Do you want to take Break?"></p-checkbox>
+        </div>
+        <div class="ui-g-12 text-left m-t-sm">
+            <span class="ui-float-label">
+                <p-dropdown id="breakType" [autoDisplayFirst]="false" [options]="breakTypeOptions" name="breakType"
+                    [(ngModel)]="selectedBreakType" optionLabel="breakTypeType" [showClear]="true" filter="true">
+                </p-dropdown>
+                <label for="breakType">Break Types</label>
+            </span>
+        </div>
+        <div class="ui-g-12 ui-md-12 text-center" style="margin-top:23px">
+            <button pButton type="button" label="Submit" class="ui-button-raised ui-button-info"></button>
+            <button mat-dialog-close pButton type="button" label="Cancel"
+                class="ui-button-raised ui-button-danger"></button>
+        </div>
+    </div>
+</form>

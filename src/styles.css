@@ -1,0 +1,480 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+/* Header */
+
+.top {
+    border: 2px solid #f56036;
+    border-radius: 6px;
+}
+
+.header {
+    height: 30px;
+    background: linear-gradient(87deg, #f5365c 0, #f56036 100%);
+    border-radius: 6px;
+    text-align: center;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.content {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .24), 0 0 2px rgba(0, 0, 0, .12);
+    width: 99%;
+    margin: 5px auto;
+}
+
+/* Paddings */
+
+.p-none {
+    padding: 0 !important;
+}
+
+.p-l-n {
+    padding-left: 0 !important;
+}
+
+.p-r-n {
+    padding-right: 0 !important;
+}
+
+.p-t-n {
+    padding-top: 0 !important;
+}
+
+.p-b-n {
+    padding-bottom: 0 !important;
+}
+
+/* Margins */
+
+.m-none {
+    margin: 0 !important;
+}
+
+.m-none {
+    margin: 0 !important;
+}
+
+.m-l-n {
+    margin-left: 0 !important;
+}
+
+.m-r-n {
+    margin: 0 !important;
+}
+
+.m-t-n {
+    margin-top: 0 !important;
+}
+
+.m-b-n {
+    margin-bottom: 0 !important;
+}
+
+/* Text Alignment  */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.h5-title {
+    height: 30px;
+    line-height: 1.8;
+    font-size: 13px;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    background: linear-gradient(to right, #25aae1, #4481eb, #3f86ed, #04befe);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    margin: 9px 0;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.material-icons {
+    vertical-align: middle;
+}
+
+/* Colors */
+
+.text-success {
+    color: #34A835;
+}
+
+.text-danger {
+    color: #e91224;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Buttons */
+
+.btn-1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    padding: 0 15px;
+    min-width: 150px;
+    line-height: 40px;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    margin-right: 8px;
+}
+
+.btn-1:focus {
+    outline: none;
+}
+
+.btn-1:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-cyan {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.btn-1.btn-orange {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.btn-1.btn-danger {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+    box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+.callImg {
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Angular Material Dialog Box Css */
+
+.modal-title h4 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, .03);
+    font-weight: 500;
+}
+
+.close-button {
+    border: none;
+    background: transparent;
+    margin-top: -3px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Table CSS */
+
+body .ui-table .ui-table-thead>tr>th {
+    font-size: 12px;
+    padding: 3px;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+    font-weight: 500;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: rgba(0, 0, 0, .54);
+}
+
+body .ui-table .ui-table-tbody>tr>td {
+    font-size: 12px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 500;
+}
+
+.ui-table {
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
+}
+
+body .ui-table .ui-table-caption, body .ui-table .ui-table-summary, body .ui-paginator {
+    border: none;
+}
+
+.ui-table table {
+    width: 99.5%;
+    margin: auto;
+}
+
+.ui-fluid .ui-button {
+    width: auto;
+    margin-right: 8px;
+}
+
+body .ui-button {
+    margin-right: 8px;
+}
+
+p-table .ui-inputtext {
+    border: 1px solid #a6a6a6;
+}
+
+.ui-float-label {
+    margin-bottom: 7px;
+}
+
+.ui-float-label>label {
+    font-size: 13px;
+}
+
+.ui-float-label>input:focus~label, .ui-float-label>input.ui-state-filled~label, .ui-float-label>.ui-inputwrapper-focus~label, .ui-float-label>.ui-inputwrapper-filled~label {
+    color: #007ad9;
+}
+
+body .ui-table .ui-table-tbody>tr:nth-child(even), body .ui-table .ui-table-caption, body .ui-table .ui-table-summary, body .ui-paginator {
+    background-color: #fff;
+}
+
+body .ui-fluid .ui-calendar.ui-calendar-w-btn input.ui-inputtext {
+    width: calc(100% - 41px);
+}
+
+/* Table Sorting  */
+
+p-sorticon .pi {
+    font-size: 14px;
+    font-family: 'Material Icons';
+}
+
+body .pi-sort:before {
+    content: '\21F5';
+}
+
+body .pi-sort-down:before {
+    content: ' \2193';
+}
+
+.pi-sort-up:before {
+    content: ' \2191';
+}
+
+/* ToolTip */
+
+.ui-tooltip .ui-tooltip-text {
+    font-size: 12px;
+}
+
+/* Search Icon */
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+}
+
+/* Tab CSS */
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a {
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Column Priorities */
+
+@media only all {
+    th.ui-p-6, td.ui-p-6, th.ui-p-5, td.ui-p-5, th.ui-p-4, td.ui-p-4, th.ui-p-3, td.ui-p-3, th.ui-p-2, td.ui-p-2, th.ui-p-1, td.ui-p-1 {
+        display: none;
+    }
+}
+
+/* Show priority 1 at 320px (20em x 16px) */
+
+@media screen and (min-width: 20em) {
+    th.ui-p-1, td.ui-p-1 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 2 at 480px (30em x 16px) */
+
+@media screen and (min-width: 30em) {
+    th.ui-p-2, td.ui-p-2 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 3 at 640px (40em x 16px) */
+
+@media screen and (min-width: 40em) {
+    th.ui-p-3, td.ui-p-3 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 4 at 800px (50em x 16px) */
+
+@media screen and (min-width: 50em) {
+    th.ui-p-4, td.ui-p-4 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 5 at 960px (60em x 16px) */
+
+@media screen and (min-width: 60em) {
+    th.ui-p-5, td.ui-p-5 {
+        display: table-cell;
+    }
+}
+
+/* Show priority 6 at 1,120px (70em x 16px) */
+
+@media screen and (min-width: 70em) {
+    th.ui-p-6, td.ui-p-6 {
+        display: table-cell;
+    }
+}
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav {
+    background: linear-gradient(to right, #25aae1, #4481eb, #3f86ed, #04befe);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    margin-bottom: 9px;
+}
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active, body .ui-tabview.ui-tabview-top .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-left .ui-tabview-nav li.ui-state-active:hover, body .ui-tabview.ui-tabview-right .ui-tabview-nav li.ui-state-active:hover {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    outline: none;
+}
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li, body .ui-tabview.ui-tabview-left .ui-tabview-nav li, body .ui-tabview.ui-tabview-right .ui-tabview-nav li, body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover {
+    background: transparent;
+    border: none;
+}
+
+body .ui-tabview.ui-tabview-top .ui-tabview-nav li a, body .ui-tabview.ui-tabview-bottom .ui-tabview-nav li a, body .ui-tabview.ui-tabview-left .ui-tabview-nav li a, body .ui-tabview.ui-tabview-right .ui-tabview-nav li a, body .ui-tabview.ui-tabview-top .ui-tabview-nav li:not(.ui-state-active):not(.ui-state-disabled):hover a {
+    color: #e5e4e4;
+    outline: none;
+}
+
+body .ui-tabview .ui-tabview-panels {
+    background: transparent;
+    border: none;
+}
+
+.ui-fluid .ui-inputtext {
+    background: transparent;
+}
+
+body .ui-tabview .ui-tabview-panels {
+    padding: 1px;
+}
+
+@media screen and (max-width:1060px) {
+    .ui-g {
+        display: block;
+    }
+}
+
+/* Dialog Box CSS */
+
+body .ui-dialog .ui-dialog-titlebar {
+    color: #fff;
+    background: linear-gradient(to right, #25aae1, #4481eb, #3f86ed, #04befe);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    border: none;
+}
+
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon {
+    color: #fff;
+}
+
+body .ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon:hover {
+    color: #f1f1f1;
+}
+
+.ui-dropdown label.ui-dropdown-label {
+    text-align: left !important;
+}
+
+.gm-style-mtc, .gm-svpc, .gmnoprint {
+    display: none;
+}
+
+body .ui-overlaypanel {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    left: 1228.2px !important;
+}
+
+.search-icon {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+}
+
+body .ui-dialog .ui-dialog-titlebar {
+    text-align: center;
+}
+
+.ui-scrollpanel-bar-y {
+    width: 3px;
+}
+
+body .ui-inputtext {
+    border: none;
+    border-bottom: 1px solid #a6a6a6;
+    border-radius: 0;
+    font-size: 13px;
+}
+
+body .ui-dropdown {
+    border: none;
+    border-bottom: 1px solid #a6a6a6;
+    border-radius: 0;
+}
+
+.ui-float-label textarea:focus~label, .ui-float-label textarea.ui-state-filled~label {
+    color: #007ad9;
+}

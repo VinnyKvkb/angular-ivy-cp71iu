@@ -1,0 +1,33 @@
+{
+    "data": [
+        {"patientId": "201906271000001001",
+		"patientName":"Koniki Venkateswararao",
+		"age":"22",
+		"gender": "Male",
+		"ambulanceNumber": "AP26TA2345 ",
+		"firstResponder":"AP26TA4567",
+		"medicalChiefComplaint":"Abdominal Pain",
+		"policeChiefComplaint":"Arson",
+		"fireChiefComplaint":"biological incident"},
+		
+		 {"patientId": "201906271000001002",
+		"patientName":"Koniki Venkateswararao",
+		"age":"25",
+		"gender": "Male",
+		"ambulanceNumber": "AP26TA2345 ",
+		"firstResponder":"AP26TA4567",
+		"medicalChiefComplaint":"Abdominal Pain",
+		"policeChiefComplaint":"Arson",
+		"fireChiefComplaint":"biological incident"},
+		
+		 {"patientId": "201906271000001003",
+		"patientName":"Koniki Venkateswararao",
+		"age":"26",
+		"gender": "Male",
+		"ambulanceNumber": "AP26TA2345 ",
+		"firstResponder":"AP26TA4567",
+		"medicalChiefComplaint":"Abdominal Pain",
+		"policeChiefComplaint":"Arson",
+		"fireChiefComplaint":"biological incident"}
+    ]
+}

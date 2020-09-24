@@ -1,0 +1,12 @@
+{
+    "data": [
+        {"ambulance": "AP26TA2345", "ambulanceType":"ALS", "baseLocation": "Vijayawada-Krishna", "phone1": "9632587410","phone2": "8965230147 ","distanceETA":"10KM - 15min","assignedDuration":"15min","expectedReleasedTime":"15min","StandardRemarks":"Standard Remarks"},
+		{"ambulance": "AP26TA2346", "ambulanceType":"BLS", "baseLocation": "Vijayawada-Krishna", "phone1": "9632587410","phone2": "8965230147 ","distanceETA":"10KM - 15min","assignedDuration":"15min","expectedReleasedTime":"15min","StandardRemarks":"Standard Remarks"},
+		{"ambulance": "AP26TA234", "ambulanceType":"BLS", "baseLocation": "Vijayawada-Krishna", "phone1": "9632587410","phone2": "8965230147 ","distanceETA":"10KM - 15min","assignedDuration":"15min","expectedReleasedTime":"15min","StandardRemarks":"Standard Remarks"},
+		{"ambulance": "AP26TA23", "ambulanceType":"Firste Responder", "baseLocation": "Vijayawada-Krishna", "phone1": "9632587410","phone2": "8965230147 ","distanceETA":"10KM - 15min","assignedDuration":"15min","expectedReleasedTime":"15min","StandardRemarks":"Standard Remarks"},
+		{"ambulance": "AP26TA345", "ambulanceType":"ALS", "baseLocation": "Vijayawada-Krishna", "phone1": "9632587410","phone2": "8965230147 ","distanceETA":"10KM - 15min","assignedDuration":"15min","expectedReleasedTime":"15min","StandardRemarks":"Standard Remarks"},
+		{"ambulance": "AP26TA3145", "ambulanceType":"Firste Responder", "baseLocation": "Vijayawada-Krishna", "phone1": "9632587410","phone2": "8965230147 ","distanceETA":"10KM - 15min","assignedDuration":"15min","expectedReleasedTime":"15min","StandardRemarks":"Standard Remarks"}
+
+        
+    ]
+}

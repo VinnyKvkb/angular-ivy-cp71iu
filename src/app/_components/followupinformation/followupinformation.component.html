@@ -1,0 +1,54 @@
+<div class="ui-g ui-fluid">
+    <!-- Table -->
+    <div class="ui-g-12 p-none">
+        <p-table [resizableColumns]="true" #dt [columns]="cols" [value]="followUpInformationData"
+            (sortFunction)="customSort($event)" [customSort]="true" [paginator]="true" [rows]="5">
+            <ng-template pTemplate="caption">
+                <div style="text-align: right">
+                    <i class="material-icons search-icon">search</i>
+                    <input type="text" pInputText size="50" placeholder="Search Here"
+                        (input)="dt.filterGlobal($event.target.value, 'contains')">
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header" let-columns>
+                <tr>
+                    <th *ngFor="let col of columns" [pSortableColumn]="col.field" pResizableColumn>
+                        {{col.header}}
+                        <p-sortIcon [field]="col.field"></p-sortIcon>
+                    </th>
+                    <th pResizableColumn>Action</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-rowData let-columns="columns">
+                <tr>
+                    <td *ngFor="let col of columns">
+                        {{rowData[col.field]}}
+                    </td>
+                    <td class="text-center">
+                        <button pTooltip="Add Feed" pButton type="button" icon="pi pi-plus" class="ui-button-info"
+                            (click)="showDialog()"></button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
+
+<!-- Dialog For Add Feed -->
+<p-dialog class="text-center" header="Add Followup Feed" [(visible)]="display" [modal]="true" [closeOnEscape]="true"
+    [responsive]="true" [style]="{width: '50%', minWidth: '50%'}" [minY]="70" [maximizable]="false"
+    [baseZIndex]="10000">
+
+
+    <div class="ui-g ui-fluid">
+        <div class="ui-g-12">
+            <span class="ui-float-label">
+                <textarea id="float-input" rows="5" cols="30" pInputTextarea></textarea>
+                <label for="float-input">Add Followup Feed</label>
+            </span>
+        </div>
+    </div>
+    <button pButton type="button" label="Submit" class="ui-button-raised ui-button-info"></button>
+    <button pButton type="button" label="Cancel" class="ui-button-raised ui-button-danger"
+        (click)="closeDialog()"></button>
+</p-dialog>

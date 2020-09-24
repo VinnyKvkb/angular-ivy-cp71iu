@@ -1,0 +1,118 @@
+.sidebar {
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  background: #283144;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 999;
+  left: 0;
+  top: 48px;
+  margin-left: 0px;
+  margin-top: -48px;
+}
+
+.sidebar.active {
+  margin-left: -253px;
+}
+
+.sidebar-content {
+  max-height: calc(100% - 30px);
+  height: calc(100% - 30px);
+  overflow-y: auto;
+  position: relative;
+}
+
+.sidebar-menu > ul {
+  padding-left: 0;
+}
+
+.sidebar-menu > ul > li > a {
+  color: #c0b2b2;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  padding: 8px 30px 8px 20px;
+  font-size: 13px;
+  color: white;
+}
+
+.sidebar-menu > ul > li > a i,
+.first-child > li > a i {
+  margin-right: 6px;
+}
+
+.sidebar-menu > ul > li > a:hover,
+.sidebar-menu > ul > li > a:focus {
+  background: #3b455d;
+  outline: none;
+}
+
+.first-child > li > a i {
+  font-size: 12px;
+}
+
+.first-child > li > a:hover,
+.first-child > li > a:hover {
+  color: #fff;
+  background: transparent;
+  border: none;
+}
+
+.first-child {
+  padding-left: 0;
+  background: #314163;
+}
+
+.first-child > li > a {
+  padding: 7px 10px 7px 10px;
+  padding-left: 45px;
+  font-size: 13px;
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* Scroll Css */
+
+.sidebar-content::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+.sidebar-content::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: #525965;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+
+.sidebar-content::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+.sidebar-content::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+.sidebar-content::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+.sidebar-content::-webkit-scrollbar-corner {
+  background: transparent;
+}

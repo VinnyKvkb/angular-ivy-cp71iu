@@ -1,0 +1,32 @@
+img {
+    height: 50px;
+    border-radius: 50px;
+}
+
+.user-body {
+    overflow: hidden;
+    padding-left: 13px;
+    text-align: left;
+}
+
+.p-sm {
+    padding: 10px 0;
+}
+
+.m-t-n {
+    margin-top: 0;
+}
+
+.m-b-n {
+    margin-bottom: 0
+}
+
+table {
+    width: 100%;
+}
+
+table>tbody>tr>td {
+    text-align: left;
+    width: 50%;
+    padding: 8px 5px;
+}

@@ -1,0 +1,30 @@
+.login {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: #fff;
+    max-width: 90%;
+    padding: 25px;
+    background: #fff;
+    width: 350px;
+    border-radius: 6px;
+}
+
+.user-logo {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.user-logo img {
+    height: 100%;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid #2b2bb9;
+}
+
+.ui-fluid .ui-button {
+    width: 100%;
+}

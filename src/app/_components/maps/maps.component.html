@@ -1,0 +1,49 @@
+<div class="ui-g ui-fluid">
+    <div class="ui-g-12 ui-md-12 p-none m-t-xs">
+        <h5 class="h5-title ">Maps</h5>
+    </div>
+    <div class="ui-g-12 ui-md-12 p-none">
+        <div style="position: relative;">
+            <i class="material-icons text-left search-icon">search</i>
+
+            <i class="material-icons clear-icon" *ngIf="placesAddress" (click)="placesAddress=''">clear</i>
+
+            <i class="pi pi-filter filter-icon" [matMenuTriggerFor]="filters"></i>
+            <input type="text" pInputText size="50" placeholder="Search Here" class="p-l-r-md" name="placesAddress"
+                [(ngModel)]='placesAddress' style="border: 1px solid #a6a6a6;border-radius: 4px;margin-bottom: 5px;">
+
+            <!-- Filters Menu -->
+            <mat-menu #filters="matMenu">
+                <div class="ui-g-12 ui-md-12 text-left">
+                    <p-checkbox value="" label="Select All"></p-checkbox>
+
+                </div>
+                <div class="ui-g-12 ui-md-12 text-left">
+                    <mat-divider></mat-divider>
+                </div>
+                <div class="ui-g-12 ui-md-12 text-left">
+                    <p-checkbox value="" label="Ambulances"></p-checkbox>
+                </div>
+                <div class="ui-g-12 ui-md-12 text-left">
+                    <p-checkbox value="" label="Hospitals"></p-checkbox>
+                </div>
+
+                <div class="ui-g-12 ui-md-12 text-left">
+                    <p-checkbox value="" label="Blood Banks"></p-checkbox>
+                </div>
+
+                <div class="ui-g-12 ui-md-12 text-left">
+                    <p-checkbox value="" label="Police Stations"></p-checkbox>
+                </div>
+            </mat-menu>
+        </div>
+
+        <agm-map style="height: 425px;" [latitude]='latitude' [longitude]='longitude'
+            (mapClick)="onChoseLocation($event)">
+            <agm-marker [latitude]='latitude' [longitude]='longitude' [markerDraggable]="true"
+                (dragEnd)="markerDragEnd($event)">
+                <!-- <agm-info-window>Börk</agm-info-window> -->
+            </agm-marker>
+        </agm-map>
+    </div>
+</div>
